@@ -17,7 +17,7 @@ jobs:
           pip install -r requirements.txt
       - name: Lint with Pylint
         run: |
-          pylint .
+          find . -name '*.py' -not -name '__init__.py' | xargs pylint .
       - name: Test with pytest
         run: >
           pip install pytest pytest-cov
