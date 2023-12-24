@@ -24,5 +24,4 @@ jobs:
           
       - name: Test with pytest
         run: >
-          pip install pytest pytest-cov
           pytest test.py --cov=transform --cov-report=term
