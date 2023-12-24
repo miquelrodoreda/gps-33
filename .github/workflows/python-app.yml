@@ -22,6 +22,6 @@ jobs:
         run: >
           pip install pytest pytest-cov
 
-          pytest test_transform.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+          pytest test_transform.py --doctest-modules --junitxml=junit/test-results.xml --cov=transform --cov-report=xml --cov-report=html
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
