@@ -25,4 +25,4 @@ jobs:
       - name: Test with pytest
         run: >
           pip install pytest pytest-cov
-          pytest test.py --junitxml=junit/test-results.xml --cov=transform --cov-report=term
+          pytest test.py --cov=transform --cov-report=term
